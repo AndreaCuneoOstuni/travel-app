@@ -33,10 +33,8 @@ const geonamesUser = process.env.GEONAMES_USER;
 
 // Base url's for endpoint urls
 const weatherbitCurrentUrl = "http://api.weatherbit.io/v2.0/current";
-//https://api.weatherbit.io/v2.0/current?city=Raleigh,NC&key=API_KEY
 const weatherbitFutureUrl = "http://api.weatherbit.io/v2.0/forecast/daily";
 const pixabayUrl = "https://pixabay.com/api/?key=";
-//https://pixabay.com/api/?key=${pixabayKey}&q=${req.body.city}&image_type=photo&category=places&order=popular&orientation=horizontal
 const geonamesBaseUrl = "http://api.geonames.org/searchJSON?q=";
 
 
@@ -104,13 +102,7 @@ app.post('/picture', async function(req, res) {
                 console.log(error);
             };
         }
-        // res.send(imageData);
     } catch (error) {
         console.log(error);
     };
 });
-
-
-// app.get("/all", (req, res) => {
-//     res.send(geonamesData);
-// });
