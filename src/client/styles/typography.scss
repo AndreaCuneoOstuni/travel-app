@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+// font-family: 'Permanent Marker', cursive;
+// font-family: 'Kalam', cursive;
+$title-font: 'Permanent Marker', cursive;
+$text-font: 'Kalam', cursive;
+
+
+// Mobile
+$screen-sm-min: 321px;
+
+// Tablets
+$screen-md-min: 768px;
+
+// Small desktops
+$screen-lg-min: 992px;
+
+// Large desktops
+$screen-xl-min: 1200px;
+
+
+
+// Mobile
+@mixin sm {
+    @media (min-width: #{$screen-sm-min}) {
+        @content;
+    }
+}
+
+// Tablets
+@mixin md {
+    @media (min-width: #{$screen-md-min}) {
+        @content;
+    }
+}
+
+// Small desktops
+@mixin lg {
+    @media (min-width: #{$screen-lg-min}) {
+        @content;
+    }
+}
+
+// Large desktops
+@mixin xl {
+    @media (min-width: #{$screen-xl-min}) {
+        @content;
+    }
+}
+
+
+
+$primary-color: #05668d;
+$secondary-color: #028090;
+$hover-color: #00a896;
+$buttons-hover-color: #02c39a;
+$buttons-color: #f0f3bd;
+$six-color: #9a8261;
+$auxiliary-color: #e0eaed;
+$maybe-color: #d1c9c7;

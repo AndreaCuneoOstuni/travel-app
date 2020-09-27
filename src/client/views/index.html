@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <title>Travel App</title>
+    </head>
+    <body>
+
+        <header>
+            <h1>Travel Planner</h1>
+            <div class="corner-triangle"></div>
+        </header>
+
+
+            <div class="container">
+                <div class="banner">
+
+                    <h2 class="page-title">My trips:</h2>
+
+                    <h3>Cool text about trips</h3>
+
+                </div>
+
+                <section class="user-input">
+                    <input id="destination" type="text" placeholder="add your next trip">
+                    <input id="pickDate" type="date">
+                    <button type="submit" onclick="return Client.formHandler(event)">Plan My Trip</button>
+                </section>
+
+                <article id="trip" class="trip-card">
+
+                </article>
+
+           </div>
+
+    </body>
+</html>
